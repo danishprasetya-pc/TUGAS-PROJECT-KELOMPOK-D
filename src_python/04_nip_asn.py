@@ -31,10 +31,11 @@ def tanggal_lahir(nip):
     elif bulan == 12:
         nama_bulan = "Desember"
     else:
-        nama_bulan = "Bulan Tidak Valid" # Added to handle invalid month numbers gracefully
+        nama_bulan = "Bulan Tidak Valid" 
 
     print(f"Tanggal lahir ASN: {tanggal} {nama_bulan} {tahun}")
 
 
 
 tanggal_lahir(199012080000008866)
+
