@@ -24,3 +24,5 @@ def hitung_akar_kuadrat(koefisien_a, koefisien_b, koefisien_c):
 
 
 hitung_akar_kuadrat(1,-4,4)
+hitung_akar_kuadrat(2,-13,15)
+hitung_akar_kuadrat(3,-10,25)
