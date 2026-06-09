@@ -1,3 +1,4 @@
+#Soal 4 Membuat Program untuk Menampilkan Tanggal Lahir ASN bila diberikan NIP ASN
 def tanggal_lahir(nip):
 
     nip_str = str(nip)
@@ -34,8 +35,6 @@ def tanggal_lahir(nip):
         nama_bulan = "Bulan Tidak Valid" 
 
     print(f"Tanggal lahir ASN: {tanggal} {nama_bulan} {tahun}")
-
-
 
 tanggal_lahir(199012080000008866)
 
