@@ -22,3 +22,5 @@ def cluster_titik(x1, x2, x3):
 
 # Contoh penggunaan
 cluster_titik(1, 2, 3)
+cluster_titik(9,-7,3)
+cluster_titik(-5,8,-1)
