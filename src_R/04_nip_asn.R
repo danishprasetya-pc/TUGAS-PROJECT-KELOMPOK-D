@@ -37,5 +37,5 @@ tanggal_lahir <- function(nip) {
   cat("Tanggal lahir ASN:", tanggal, nama_bulan, tahun, "\n")
 }
 
-tanggal_lahir(199012080000008866)
+tanggal_lahir(199903272025062013)
 
