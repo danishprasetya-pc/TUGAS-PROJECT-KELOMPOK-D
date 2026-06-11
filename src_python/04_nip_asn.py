@@ -36,4 +36,4 @@ def tanggal_lahir(nip):
 
     print(f"Tanggal lahir ASN: {tanggal} {nama_bulan} {tahun}")
 
-tanggal_lahir(199012080000008866)
+tanggal_lahir(199903272025062013)
