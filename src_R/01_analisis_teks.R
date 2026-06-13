@@ -12,16 +12,10 @@ hitung_kata_dan_kalimat <- function(teks) {
     }
   }
   
-  cat("Teks tersebut memuat",jumlah_kalimat,"kalimat dan",jumlah_kata,"kata.")
+  cat("Teks tersebut memuat",jumlah_kalimat,"kalimat dan",jumlah_kata,"kata.\n")
 }
 
 # Contoh pemanggilan fungsi
-hitung_kata_dan_kalimat("ini hanya mencoba. apakah ini berhasil")
-hitung_kata_dan_kalimat("bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa.
-                        dan oleh sebab itu, maka penjajahan di atas dunia harus dihapuskan.")
-hitung_kata_dan_kalimat("aku berlari menjauh dari hal yang tak lagi sepi.
-                        tetes air mata serupa hujan basahiku sepanjang jalan.
-                        dalam lelah kuberharap tuhan berikan aku lupa.
-                        namun itu tak kudapatkan kisah lain yang ia berikan.
-                        dalam pelarian, kutemukan diriku.
-                        ")
+hitung_kata_dan_kalimat("Ketuhanan Yang Maha Esa. Kemanusiaan yang adil dan beradab. Persatuan Indonesia.")
+hitung_kata_dan_kalimat("Fungsi adalah blok kode yang diberi nama dan digunakan untuk menjalankan tugas tertentu. Fungsi dapat menerima input berupa parameter atau argumen, memproses input tersebut, kemudian menghasilkan output.")
+hitung_kata_dan_kalimat("aku berlari menjauh dari hal yang tak lagi utuh. tetes air mata serupa hujan basahiku sepanjang jalan. dalam lelah kuberharap agar tuhan berikan aku lupa. namun itu tak kudapatkan kisah lain yang ia berikan.")
