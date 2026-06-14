@@ -1,26 +1,36 @@
-import math
+import numpy as np
+
 
 def cluster_titik(x1, x2, x3):
+    A = np.array([3, 2, 4])
+    B = np.array([-2, 5, 1])
+    C = np.array([1, -3, -2])
 
-    A = (2, 1, 3)
-    B = (1, -4, 6)
-    C = (-2, 3, -2)
+    U = np.array([x1, x2, x3])
 
-    U = (x1, x2, x3)
+    dA = np.sqrt(np.sum((U - A) ** 2))
+    dB = np.sqrt(np.sum((U - B) ** 2))
+    dC = np.sqrt(np.sum((U - C) ** 2))
 
-    dA = math.sqrt(sum((u - a) ** 2 for u, a in zip(U, A)))
-    dB = math.sqrt(sum((u - b) ** 2 for u, b in zip(U, B)))
-    dC = math.sqrt(sum((u - c) ** 2 for u, c in zip(U, C)))
+    print(f"Jarak ke A: {dA:.4f}")
+    print(f"Jarak ke B: {dB:.4f}")
+    print(f"Jarak ke C: {dC:.4f}")
 
-    if dA <= dB and dA <= dC:
-        print("Titik termasuk Cluster A")
-    elif dB <= dA and dB <= dC:
-        print("Titik termasuk Cluster B")
-    else:
-        print("Titik termasuk Cluster C")
+    jarak_min = min(dA, dB, dC)
+    cluster_terpilih = []
+
+    if dA == jarak_min:
+        cluster_terpilih.append("Cluster A")
+    if dB == jarak_min:
+        cluster_terpilih.append("Cluster B")
+    if dC == jarak_min:
+        cluster_terpilih.append("Cluster C")
+
+    output_cluster = " dan ".join(cluster_terpilih)
+    print(f"Titik termasuk {output_cluster}\n")
 
 
-# Contoh penggunaan
-cluster_titik(1, 2, 3)
-cluster_titik(9,-7,3)
-cluster_titik(-5,8,-1)
+#Contoh pemanggilan fungsi
+cluster_titik(4, 3, 7)
+cluster_titik(3, -7, -1)
+cluster_titik(0.5, 3.5, 2.5)
